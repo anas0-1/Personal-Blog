@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap');
+
+body {
+    font-family: "Familjen Grotesk", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f9f9f9;
+}
+
+.SignInForm {
+    font-family: "Familjen Grotesk", sans-serif;
+    font-family: Familjen Grotesk;
+    width: 375px;
+    padding: 60px 30px 60px 30px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.SignInForm h2 {
+    font-family: "Familjen Grotesk", sans-serif;
+    margin-bottom: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    color: #333;
+}
+
+.FormInput {
+    margin-bottom: 35px;
+}
+
+.FormInput label {
+    font-family: "Familjen Grotesk", sans-serif;
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+    font-weight: 700;
+}
+
+.FormInput .inputF {
+    font-family: "Familjen Grotesk", sans-serif;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: flex;
+    gap: 10px;
+}
+.FormInput input {
+    border: none;
+    outline: none;
+    background-color: transparent; 
+    width: 90%;
+    font-family: "Familjen Grotesk", sans-serif;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #235EFF;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: "Familjen Grotesk", sans-serif;
+}
+
+button:hover {
+    background-color: #1e4fc8;
+}
+
+.SignUpLink {
+    text-align: center;
+    font-size: 14px;
+    font-family: "Familjen Grotesk", sans-serif;
+}
+
+.SignUpLink a {
+    color: #235EFF;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: "Familjen Grotesk", sans-serif;
+}
+
+#icon{
+    float: right;
+    height: 50px;
+    position: relative;
+    font-size: 25px;
+    padding-top: 10px;
+}
+.error-msg{
+    display: none;
+    color: #ff2851;
+    font-size: 14px;
+    margin-top: 10px;
+}
