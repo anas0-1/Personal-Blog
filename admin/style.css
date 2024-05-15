@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+}
+.Rectangle1 {
+    width: 250px;
+    height: 730px;
+    left: 2px;
+    top: 9px;
+    background-color: #031723;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+.title {
+    font-family: Montserrat;
+    font-weight: 700;
+    word-wrap: break-word;
+    justify-content: center;
+    display: flex;
+    
+}
+
+.title span {
+    color: white;
+}
+
+.title .highlight {
+    color: #235EFF;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 60px;
+}
+
+.text {
+    position: absolute;
+    left: 90px;
+    top: 143px;
+    color: white;
+    font-size: 17px;
+    font-family: Montserrat;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+.circle {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%; 
+    overflow: hidden; 
+}
+
+.circle img {
+    width: 100%; 
+    height: auto;
+    display: block;
+}
+.cnt-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 130px;
+    color: white;
+    text-align: center;
+
+
+}
+
+.btn {
+    background: none;
+    border: none;
+    color: white;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    font-family: Montserrat;
+    display: flex; 
+    align-items: center; 
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+    background-color: #235EFF;
+}
+.icon {
+    width: 19px; 
+    height: 17px; 
+    margin-right: 5px;
+    vertical-align: middle;
+    transition: transform 0.3s ease; 
+}
+
+.btn:hover .icon {
+    transform: rotateY(180deg); 
+}
+.cnt-2{
+    padding-top: 130px;
+
+}
+.crud-1{
+    display: flex;
+    justify-content: center;
+    width: 140vh;
+
+}
+td a {
+    margin-right: 15px; 
+}
+.btn-10{
+    background: #235EFF;
+    border: none;
+    color: white;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    font-family: Montserrat;
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    text-decoration: none;
+}
+/* btn  */
+.btn-btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    text-decoration: none;
+}
+.btn-btn.btn-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-btn.btn-danger:hover {
+    color: #fff;
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+/* Button styling */
+.btn-1 {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-right: 15px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+/* Danger button */
+.btn-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+/* Warning button */
+.btn-warning {
+    color: #212529;
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+    border-color: #d39e00;
+}
+
+/* Link button */
+.btn-link {
+    font-weight: normal;
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+}
+
+.btn-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Disabled button */
+.btn-disabled {
+    pointer-events: none;
+    opacity: 0.65;
+}
