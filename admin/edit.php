@@ -7,13 +7,13 @@ if (isset($_POST['submit'])) {
     $name = $_POST['name'];
     $email = $_POST['email'];
     $phone = $_POST['phone'];
-    $enrollNumber = $_POST['enrollnumber'];
+
     $dateOfCreate = $_POST['date'];
 
 
-    $sql = "UPDATE `crud` SET Name=?, Email=?, Phone=?, `Enroll Number`=?, `Date of create`=? WHERE id=?";
+    $sql = "UPDATE `crud` SET Name=?, Email=?, Phone=?, `Date of create`=? WHERE id=?";
     $stmt = mysqli_prepare($dbs, $sql);
-    mysqli_stmt_bind_param($stmt, "sssssi", $name, $email, $phone, $enrollNumber, $dateOfCreate, $id);
+    mysqli_stmt_bind_param($stmt, "sssssi", $name, $email, $phone, $dateOfCreate, $id);
     $result = mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
 
@@ -49,7 +49,6 @@ if (isset($_GET['id'])) {
         $name = $row['Name'];
         $email = $row['Email'];
         $phone = $row['Phone'];
-        $enrollNumber = $row['Enroll Number'];
         $dateOfCreate = $row['Date of create'];
     } else {
         header("Location: index.php?error=user_not_found");
@@ -96,10 +95,6 @@ if (isset($_GET['id'])) {
                     <div class="mb-3">
                         <label class="form-label">Phone:</label>
                         <input type="tel" class="form-control" name="phone" placeholder="phone" value="<?php echo $phone; ?>">
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">Enroll Number:</label>
-                        <input type="tel" class="form-control" name="enrollnumber" placeholder="Enroll number" value="<?php echo $enrollNumber; ?>">
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Date Of Create :</label>

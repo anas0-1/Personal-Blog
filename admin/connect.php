@@ -2,13 +2,13 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "dashbord";
+$database = "dashbord";
 
 // Create connection
-$dbs = mysqli_connect($servername, $username, $password, $dbname);
+$dbs = new mysqli($servername, $username, $password, $database);
 
 // Check connection
-if (!$dbs) {
-  die("Connection failed: " . mysqli_connect_error());
+if ($conn->connect_error) {
+    die("Connection failed: " . $dbs->connect_error);
 }
-// echo "Connected successfully";
+?>

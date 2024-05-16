@@ -18,15 +18,15 @@ include "connect.php";
    
     <div class="main-table">
         <h3 class="mb-3">All Comments</h3>
-        <!-- PHP error and success alerts -->
+        
         <div class="alert alert-warning">
             Error message here
         </div>
-        <!-- PHP success alert -->
+        
         <div class="alert alert-success">
             Success message here
         </div>
-        <!-- Table for displaying comments -->
+        
         <table class="table t1 table-bordered">
             <thead>
                 <tr>
@@ -38,7 +38,7 @@ include "connect.php";
                 </tr>
             </thead>
             <tbody>
-                <!-- Sample comment row (use PHP loop to generate rows dynamically) -->
+                
                 <tr>
                     <th scope="row">1</th>
                     <td><a href="single_post.php?post_id=1">Post Title</a></td>
@@ -46,10 +46,10 @@ include "connect.php";
                     <td>@username</td>
                     <td><a href="comment-delete.php?comment_id=1" class="btn-btn btn-danger">Delete</a></td>
                 </tr>
-                <!-- End of sample comment row -->
+              
             </tbody>
         </table>
-        <!-- Empty table message -->
+      
         <div class="alert alert-warning">
             Empty!
         </div>

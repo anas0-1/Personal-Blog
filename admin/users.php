@@ -7,7 +7,6 @@
                         <th scope="col">Name</th>
                         <th scope="col">Email</th>
                         <th scope="col">Phone</th>
-                        <th scope="col">Enroll Number</th>
                         <th scope="col">Date of Create</th>
                         <th scope="col">Actions</th>
                     </tr>
@@ -22,8 +21,7 @@
                             <td><?php echo $row["id"] ?></td>
                             <td><?php echo $row["Name"] ?></td>
                             <td><?php echo $row["Email"] ?></td>
-                            <td><?php echo $row["Phone"] ?></td>
-                            <td><?php echo $row["Enroll Number"] ?></td>
+                            <td><?php echo $row["Phone"] ?></td> 
                             <td><?php echo $row["Date of create"] ?></td>
                             <td>
                                 <a href="edit.php?id=<?php echo $row["id"] ?>"><i class="bi bi-pencil-square text-primary"></i></a>
