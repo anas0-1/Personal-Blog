@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+header {
+    width: 100%;
+
+    z-index: 1000; 
+    background-color: white; /
+}
+.head{
+    display: flex;
+    height: 55px;
+
+}
+.logo{
+    color: #235EFF ;
+    font-family: "Poppins", sans-serif;
+}
+.nav_items{
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 80px;
+}.svghome{
+   
+    color: #444750;
+    cursor: pointer;
+}
+.home_logo{
+    width: 20px;
+    height: 20px;
+}
+
+.signin{
+    position: relative;
+    left: 1000px;
+    font-size: 18px;
+    color: #444750;
+    cursor: pointer;
+    font-family: "Familjen Grotesk", sans-serif;
+}
+.circle {
+    position: relative;
+    left:1100px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%; 
+    overflow: hidden; 
+}
+
+#pr_img {
+    width: 100%; 
+    height: auto;
+    display: block;
+}
+a{
+    text-decoration: none;
+    color: #444750;
+    cursor: pointer;
+    font-family: "Familjen Grotesk", sans-serif;
+}
+.has-search{
+    margin-left: 804px;
+    margin-top: 10px;
+    width: 200px;
+}
+.has-search .form-control {
+    padding-left: 20px;
+    margin-top: 2px;
+    width: 282px;
+    height: 40px;
+    background-color: #f9f9f9;
+    border: none;
+    border-radius: 5px;
+}
+.highlight {
+    color: blue;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    width: 15PX;
+    height: 15PX;
+    margin-left: 2px;
+}
+.has-search .form-control:focus {
+    outline: none; 
+}
+.grid_section{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 40px;
+    padding: 10px;
+    margin-top: 50px;
+ }
+  
+  .grid-container > div {
+    border: 1px solid rgb(192, 190, 190);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 30px;
+    height: auto;
+    width: 350px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  }
+ #card_img{
+    height: 147px;
+    width: 340px;
+    margin-top: 3px;
+    border-radius: 4px;
+  }
+  div .categoryarticle{
+    font-size: 10px;
+    margin-right: 293px;
+    margin-top: 0;
+    color: #3F79E6;
+    font-family: 'Roboto';
+  }
+  h1{
+    font-size: large;
+    MARGIN: 0px 27px 0px 0px;
+    color: #585757;
+   font-family: "Familjen Grotesk", sans-serif;
+  }
+  .moment{
+    color: #808080;
+    font-size: 10px;
+    font-family: 'Roboto';
+    margin-right: 289px;
+  }
+  .more{
+    background-color: #235EFF; 
+    color: white;
+    border: none; 
+    border-radius: 5px; 
+    padding: 8px 10px;
+    cursor: pointer;
+    margin-left: 235px;
+    margin-bottom: 10px;
+  }
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.559); /* couleur de fond semi-transparente */
+}
+.adminname{   
+   
+    font-size: 13px;
+    margin: 0px 286px 0 0;
+    font-family: 'Roboto';
+    color: #808080;
+ }
+
+
+

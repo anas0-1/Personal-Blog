@@ -6,7 +6,7 @@ error_log("Script is being executed.");
 $dbhost = 'localhost';
 $dbuser = 'root';
 $dbpass = '';
-$dbname = 'persBlog';
+$dbname = 'blog';
 
 try {
     $conn = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);
@@ -25,16 +25,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $username = $_POST['username'];
     $email = $_POST['email'];
+    $phone = $_POST['phone'];
     $password = $_POST['password'];
     $confirm_password = $_POST['confirm_password'];
 
     error_log("Username: $username");
     error_log("Email: $email");
+    error_log("Email: $phone");
     error_log("Password: $password");
     error_log("Confirm Password: $confirm_password");
 
     // Validate inputs (you can add more validation)
-    if (!empty($username) && !empty($email) && !empty($password) && !empty($confirm_password)) {
+    if (!empty($username) && !empty($email) && !empty($phone) && !empty($password) && !empty($confirm_password)) {
         error_log("All fields are filled.");
 
         if ($password === $confirm_password) {
@@ -45,16 +47,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             try {
                 // Insert user data into database
-                $stmt = $conn->prepare("INSERT INTO users (username, email, password) VALUES (:username, :email, :password)");
+                $stmt = $conn->prepare("INSERT INTO user (username, email, phone, password, idrole) VALUES (:username, :email, :phone, :password, 2)");
                 $stmt->bindParam(':username', $username);
                 $stmt->bindParam(':email', $email);
+                $stmt->bindParam(':phone', $phone);
                 $stmt->bindParam(':password', $hashed_password);
+                
                 $stmt->execute();
 
                 error_log("User registered successfully.");
                 // Redirect to success page or do something else
-                $_SESSION['username'] = $username; // Start session for logged-in user
-                header("Location: welcome.php");
+                $_SESSION['username'] = $username; 
+                header("Location: ../login.html");
                 exit();
             } catch(PDOException $e) {
                 error_log("Error: " . $e->getMessage());

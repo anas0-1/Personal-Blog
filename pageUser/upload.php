@@ -1,20 +1,3 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-<head>
-    <title>File Upload To Database</title>
-</head>
-<body>
-    <h2>Please Choose a File and click Submit</h2>
-    <form enctype="multipart/form-data" action="<?php echo htmlentities($_SERVER['PHP_SELF']);?>" method="post">
-        Select Image File:
-        <input type="file" name="userfile"  size="4294967296">
-        <input type="hidden" name="MAX_FILE_SIZE" value="4294967296">
-        <br />
-        <input type="submit" value="Submit" />
-    </form>
-</body>
-</html>
-
 <?php
 // Start the session
 session_start();
@@ -90,3 +73,4 @@ if(!isset($_FILES['userfile'])) {
     }
 }
 ?>
+
