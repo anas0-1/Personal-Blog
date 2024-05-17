@@ -30,11 +30,11 @@ include "connect.php";
             <button class="btn" onclick="showSection('user')"><img src="svg/user.svg" class="icon"> Users</button>
             <button class="btn" onclick="showSection('articles1')"><img src="svg/article.svg" class="icon"> Articles</button>
             <button class="btn" onclick="showSection('comment1')"><img src="svg/comment.svg" class="icon"> Comments</button>
-            <button class="btn" onclick="showSection('settings')"><img src="svg/set.svg" class="icon"> Settings</button>
+            <button class="btn" onclick="window.location.href='../pageUser/user.php'"><img src="svg/set.svg" class="icon"> Settings</button>
         </div>
         </div>
         <div class="cnt-2">
-            <button class="btn"> Logout <img src="svg/logout.svg"></button>
+            <button class="btn" onclick="window.location.href='../pageUser/logout.php'"> Logout <img src="svg/logout.svg"></button>
         </div>
     </aside>
     <main>
@@ -61,7 +61,13 @@ include "connect.php";
             ?>
         </section>
 
+       
+        <section id="logout" style="display: none;">
+            <?php
 
+            include 'logout.php';
+            ?>
+        </section>
 
     </main>
 

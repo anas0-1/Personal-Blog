@@ -20,6 +20,15 @@ body {
     
 
 }
+a {
+    text-decoration: none; 
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none; 
+    color: inherit; 
+}
 .title {
     font-family: Montserrat;
     font-weight: 700;
