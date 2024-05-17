@@ -33,7 +33,7 @@ if (isset($_POST['login'])) {
             // Password is correct, set session and redirect based on role
             $_SESSION['iduser'] = $row['iduser'];
             if ($row['idrole'] == 1) {
-                header("Location: welcomeadmin.php");
+                header("Location: ../admin/index.php");
                 exit();
             } elseif ($row['idrole'] == 2) {
                 header("Location: ../myphptest/accueil.php");
