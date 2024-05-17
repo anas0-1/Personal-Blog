@@ -21,12 +21,7 @@ include "connect.php";
         <button type="button" class="btn-add" data-bs-toggle="modal" data-bs-target="#createPostModal">Add New</button>
 
 
-        <!-- Error and Success Messages -->
-        <?php if (isset($_GET['success'])) { ?>
-            <div class="alert alert-success">
-                <?php echo htmlspecialchars($_GET['success']); ?>
-            </div>
-        <?php } ?>
+     
 
         <!-- Table of Posts -->
         <table class="table t1 table-bordered">
@@ -59,9 +54,8 @@ include "connect.php";
                         echo "<td>" . $row["title"] . "</td>";
                         echo "<td>" . $row["text"] . "</td>";
                         echo "<td>";
-                        echo "<a href='post-edit.php?id=" . $row["id"] . "' class='btn-btn btn-warning'>Edit</a> ";
                         echo "<a href='post-delete.php?id=" . $row["id"] . "' class='btn-btn btn-danger'>Delete</a>";
-
+                        echo "<a href='post-edit.php?id=" . $row["id"] . "' class='btn-btn btn-warning'>Edit</a>";
                         echo "</td>";
                         echo "</tr>";
                     }
