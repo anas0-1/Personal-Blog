@@ -69,7 +69,6 @@ a{
     width: 282px;
     height: 40px;
     background-color: #f9f9f9;
-    border: none;
     border-radius: 5px;
 }
 .highlight {
@@ -113,9 +112,11 @@ a{
     border-radius: 5px;
     text-align: center;
     font-size: 30px;
-    height: auto;
-    width: 350px;
+    height: 625px;
+    width: 35%;
+    word-wrap: break-word;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    overflow: auto;
   }
   div .imagearticle{
     width: 41vw;
@@ -172,17 +173,6 @@ h1{
     display: flex;
     align-items: center;
 }
-#commentlike{
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid #EBEBEB;
-    font-size: 30px;
-    position: fixed;
-    right: 2px;
-    height: 78%;
-    border-radius: 8px;
-    width: 36vw;
-    overflow: auto;
-}
 
 .nbrlikes{
     
@@ -216,27 +206,47 @@ h1{
     color: #585757;
     margin-left: 26px;   
 }
+.commentaire {
+    display: flex;
+    margin-left: 10px;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    word-wrap: break-word;
+    
+}
 
-#profileimg{
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
+.commentaire div {
+    max-width: 100%;
+    word-wrap: break-word;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.commentaire img {
   
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%;
+    margin-right: 10px;
 }
-.username{
-    font-size: 18px;
-    margin: 0px;
-    
+
+.commentaire .username {
+    /* Add styles to the username */
+    font-weight: bold;
+    margin-right: 10px;
 }
-.commentcontent{
-   
-    
-    font-size: 12px;
-    margin: 0px;
+
+.commentaire .commentcontent {
+    font-size: 15px;
+    margin: 0;
+    max-width: 150px; 
+    margin: 0 auto;
 }
+
 
 .nmbComment{
-   
     color: #585757;
     FONT-SIZE: 23px;
     margin: 0px;
@@ -260,17 +270,9 @@ h1{
 }
 .username{
     font-size: 18px;
-    margin: 0px;
+    color: #585757;
     
 }
-.commentcontent{
-   
-    
-    font-size: 12px;
-    margin: 0px;
-}
-
-
 .inputF {
     width: 95%;
     padding: 10px;
@@ -289,11 +291,6 @@ input {
     background-color: transparent; 
     width: 90%;
     font-family: "Familjen Grotesk", sans-serif;
-}
-.commentaire{
-    display: flex;
-    align-items: center;
-    margin-left: 25px;
 }
 .user_comment{
     display: flex;
