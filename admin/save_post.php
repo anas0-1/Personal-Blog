@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Escape user inputs for security
     $title = htmlspecialchars($_POST['title']);
     $Content = htmlspecialchars($_POST['Content']);
-    $categoryId = $_POST['category']; // Assuming the category ID is submitted from the form
+    $categoryId = $_POST['category']; 
 
     // Get the image data
     $coverData = file_get_contents($_FILES['cover']['tmp_name']);
@@ -31,6 +31,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     $stmt->closeCursor();
+}
+
+// Fetch categories from the database
+$categoryQuery = "SELECT * FROM categories";
+$categoryStmt = $conn->query($categoryQuery);
+
+// Populate the category dropdown menu
+while ($category = $categoryStmt->fetch(PDO::FETCH_ASSOC)) {
+    echo "<option value='" . $category['IdCategorie'] . "'>" . $category['category_name'] . "</option>";
 }
 
 // Close database connection

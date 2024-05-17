@@ -91,18 +91,13 @@ include "connect.php";
                             <textarea class="form-control" id="postText" name="Content"></textarea>
                         </div>
                         <div class="mb-3">
-                             <label for="categorySelect" class="form-label">Category</label>
-                             <select class="form-select" id="categorySelect" name="category">
-                            <?php
-                            // Fetch categories from the database
-                            $categoryQuery = "SELECT * FROM categories";
-                            $categoryStmt = $conn->query($categoryQuery);
-                            while ($category = $categoryStmt->fetch(PDO::FETCH_ASSOC)) {
-                                echo "<option value='" . $category['IdCategorie'] . "'>" . $category['category_name'] . "</option>";
-                            }
-                            ?>
-                         </select>
-                         </div>
+                        <label for="categorySelect" class="form-label">Category</label>
+                        <select class="form-select" id="categorySelect" name="category">
+                            <option value='1'>Cat1</option>";
+                            <option value='2'>Cat2</option>";
+                            <option value='3'>Cat3</option>";
+                        </select>
+                    </div>
                         <div class="mb-3">
                             <label for="postCover" class="form-label">Cover Image</label>
                             <input type="file" class="form-control" id="postCover" name="cover">
